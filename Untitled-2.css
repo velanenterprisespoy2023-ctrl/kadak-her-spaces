@@ -1,0 +1,181 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#120707;
+  color:white;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  background:#2a0d0d;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  font-size:30px;
+  color:gold;
+  font-weight:bold;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 15px;
+}
+
+.icons i{
+  margin-left:15px;
+  cursor:pointer;
+}
+
+.hero{
+  height:90vh;
+  background:url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b')
+  center/cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.overlay{
+  background:rgba(0,0,0,0.5);
+  padding:50px;
+  text-align:center;
+  border-radius:10px;
+}
+
+.overlay h1{
+  font-size:60px;
+  color:gold;
+}
+
+.overlay p{
+  margin:20px 0;
+  font-size:20px;
+}
+
+.overlay button{
+  padding:15px 40px;
+  border:none;
+  background:gold;
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+.categories{
+  display:flex;
+  gap:20px;
+  padding:60px 8%;
+}
+
+.card{
+  flex:1;
+  background:#2a0d0d;
+  border-radius:10px;
+  overflow:hidden;
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+.card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+.card h2{
+  padding:20px;
+  text-align:center;
+  color:gold;
+}
+
+.products{
+  padding:60px 8%;
+}
+
+.products h1{
+  text-align:center;
+  margin-bottom:40px;
+  color:gold;
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.product{
+  background:#2a0d0d;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.product img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.product h3{
+  margin:15px 0;
+}
+
+.product button{
+  padding:12px 30px;
+  border:none;
+  background:gold;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+.instagram{
+  text-align:center;
+  padding:50px;
+}
+
+.instagram a{
+  display:block;
+  margin:15px;
+  color:gold;
+  text-decoration:none;
+}
+
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  width:60px;
+  height:60px;
+  background:#25D366;
+  color:white;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:30px;
+  text-decoration:none;
+}
+
+footer{
+  background:#2a0d0d;
+  padding:40px;
+  text-align:center;
+}
